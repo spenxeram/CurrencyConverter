@@ -1,0 +1,10 @@
+.jumbotron-fluid.jumbotron {
+    background: #002f78;
+}
+
+.container.converter {
+    background: white;
+    padding: 5%;
+    border-radius: 11px;
+    box-shadow: 1px 1px 5px #191919;
+}

@@ -19,8 +19,20 @@ function getCurrencyList() {
       console.log(result.rates);
       let list = Object.keys(result.rates);
       list.push("EUR");
-      console.log(list);
+      outputCurrencySelection(list);
     }
   }
   xhr.send();
+}
+
+function outputCurrencySelection(list) {
+  let selection1 = document.querySelector("#currency1");
+  let selection2 = document.querySelector("#currency2");
+  let output = "";
+  list.forEach((item, i) => {
+    output += `<option value="${item}">${item}</option>`;
+  });
+  console.log(output);
+  selection1.innerHTML = output;
+  selection2.innerHTML = output;
 }

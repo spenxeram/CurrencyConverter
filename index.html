@@ -18,7 +18,25 @@
   <div class="jumbotron-fluid jumbotron">
     <div class="container converter">
       <div class="row">
-        <h1>Convert</h1>
+        <h1>Convert</h1> <br>
+      </div>
+      <div class="row">
+        <form class="form-inline" method="GET" action="index.html">
+          <fieldset class="form-group">
+          <input type="number" class="form-control" id="currency-amount" placeholder="1" value="1" name="currency-amount">
+          </fieldset>
+          <fieldset class="form-group">
+            <select class="form-control mr-2 ml-2" name="currency1" id="currency1">
+
+            </select>
+          </fieldset>
+          <fieldset class="form-group">
+            <select class="form-control" name="currency2" id="currency2">
+
+            </select>
+          </fieldset>
+          <button type="button" class="btn btn-primary ml-2 convert">Convert!</button>
+        </form>
       </div>
     </div>
   </div>
